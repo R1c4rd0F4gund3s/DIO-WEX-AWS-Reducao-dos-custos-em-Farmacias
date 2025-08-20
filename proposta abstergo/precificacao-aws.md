@@ -1,18 +1,18 @@
-# Precificação do Projeto AWS - Abstergo Industries
+# Precificação do Projeto AWS - Abstergo Industries ☁️💰
 
-## Resumo Executivo
+## Resumo Executivo 📝
 
 **Investimento Mensal Estimado: USD $85-120**  
 **Economia Anual Projetada: 60-70% vs. infraestrutura física**
 
 ---
 
-## Detalhamento de Custos por Serviço
+## Detalhamento de Custos por Serviço 💡
 
-### 1. Amazon EC2 (Compute) - Automação e Escalabilidade
+### 1. Amazon EC2 (Compute) - Automação e Escalabilidade 🖥️⚡
 **Configuração:** 2-3 instâncias t3.micro com Auto Scaling
 
-**Descrição:** O Amazon EC2 fornece servidores virtuais escaláveis sob demanda para hospedar as aplicações da farmácia. Como hub de distribuição e revenda, a Abstergo Industries precisa de infraestrutura flexível que se adapte às variações de demanda, especialmente em picos de vendas. O EC2 oferece instâncias que substituem a infraestrutura física, permitindo ajustar recursos de forma eficiente. A integração com AWS Auto Scaling ajusta a capacidade automaticamente, garantindo que a empresa não pague por recursos em horários de baixa demanda e evite problemas de performance em momentos de alta atividade.
+**Descrição:** O Amazon EC2 fornece servidores virtuais escaláveis sob demanda para hospedar as aplicações da farmácia. Como hub de distribuição e revenda, a Abstergo Industries precisa de...
 
 **Benefícios de Custo:**
 - Modelo pay-as-you-use elimina custos fixos de servidores físicos
@@ -26,10 +26,10 @@
 | Instância adicional | Picos de demanda (50% do tempo) | $8.28 |
 | **Subtotal EC2** | | **$24.84** |
 
-### 2. Application Load Balancer - Otimização de Custos e Performance
+### 2. Application Load Balancer - Otimização de Custos e Performance 🚦📊
 **Configuração:** ALB para distribuição de tráfego
 
-**Descrição:** O Application Load Balancer é essencial para distribuir o tráfego entre as instâncias EC2, garantindo alta disponibilidade e performance otimizada. Funciona como ponto de entrada único para os usuários (B2B/B2C), direcionando automaticamente as requisições para instâncias saudáveis. Integra-se com o AWS Cost Explorer e Trusted Advisor para monitoramento contínuo de custos e otimização de recursos.
+**Descrição:** O Application Load Balancer é essencial para distribuir o tráfego entre as instâncias EC2, garantindo alta disponibilidade e performance otimizada. Funciona como ponto de entrada...
 
 **Benefícios de Custo:**
 - Elimina necessidade de hardware dedicado para balanceamento
@@ -38,7 +38,7 @@
 - Integração nativa com ferramentas de monitoramento de custos AWS
 - Escalabilidade automática sem investimento adicional em infraestrutura
 
-**Monitoramento de Custos:** O ALB trabalha em conjunto com AWS Cost Explorer para fornecer visibilidade total dos gastos de rede e processamento, permitindo identificar padrões de uso e otimizar custos através de relatórios detalhados de tráfego e performance.
+**Monitoramento de Custos:** O ALB trabalha em conjunto com AWS Cost Explorer para fornecer visibilidade total dos gastos de rede e processamento, permitindo identificar padrões de uso e otimizar...
 
 | Item | Especificação | Custo Mensal |
 |------|---------------|--------------|
@@ -46,7 +46,7 @@
 | Processamento | ~10GB/mês | $0.80 |
 | **Subtotal ALB** | | **$23.30** |
 
-### 3. Amazon RDS (Database)
+### 3. Amazon RDS (Database) 🗄️🔒
 **Configuração:** MySQL db.t3.micro com backup
 
 | Item | Especificação | Custo Mensal |
@@ -55,7 +55,7 @@
 | Backup Storage | 7 dias retenção, ~5GB | $0.50 |
 | **Subtotal RDS** | | **$16.34** |
 
-### 4. Amazon S3 (Storage)
+### 4. Amazon S3 (Storage) 📦🖼️
 **Configuração:** Armazenamento de imagens e backups
 
 | Item | Especificação | Custo Mensal |
@@ -64,7 +64,7 @@
 | Requests | ~1000 PUT/GET por mês | $0.05 |
 | **Subtotal S3** | | **$1.20** |
 
-### 5. CloudWatch (Monitoring)
+### 5. CloudWatch (Monitoring) 👀⏰
 **Configuração:** Métricas e alarmes para Auto Scaling
 
 | Item | Especificação | Custo Mensal |
@@ -73,7 +73,7 @@
 | Alarmes | 5 alarmes | $0.50 |
 | **Subtotal CloudWatch** | | **$3.50** |
 
-### 6. Data Transfer & Outros
+### 6. Data Transfer & Outros 🌐🔄
 **Configuração:** Transferência de dados e custos diversos
 
 | Item | Especificação | Custo Mensal |
@@ -84,7 +84,7 @@
 
 ---
 
-## Resumo de Custos
+## Resumo de Custos 🧾
 
 | Serviço | Custo Mensal (USD) | % do Total |
 |---------|-------------------|------------|
@@ -99,28 +99,28 @@
 
 ---
 
-## Cenários de Uso
+## Cenários de Uso 📈
 
-### Cenário Conservador (Baixa Demanda)
+### Cenário Conservador (Baixa Demanda) 💤
 - **Custo Mensal:** $85
 - 2 instâncias EC2 na maior parte do tempo
 - Tráfego reduzido
 
-### Cenário Padrão (Demanda Normal)
+### Cenário Padrão (Demanda Normal) ⚙️
 - **Custo Mensal:** $103
 - Auto Scaling ativo com 2-3 instâncias
 - Tráfego moderado
 
-### Cenário Pico (Alta Demanda)
+### Cenário Pico (Alta Demanda) 🚀
 - **Custo Mensal:** $120
 - 3 instâncias EC2 constantemente ativas
 - Alto volume de transações
 
 ---
 
-## Comparação com Infraestrutura Tradicional
+## Comparação com Infraestrutura Tradicional 🏢 vs ☁️
 
-### Custos Infraestrutura Física (Estimativa)
+### Custos Infraestrutura Física (Estimativa) 🏢
 
 | Item | Custo Inicial | Custo Mensal |
 |------|---------------|--------------|
@@ -131,7 +131,7 @@
 | Pessoal TI | - | $2,000 |
 | **TOTAL** | **$25,000** | **$2,380** |
 
-### Economia com AWS
+### Economia com AWS ☁️💰
 - **Investimento inicial:** $0 vs $25,000
 - **Custo operacional:** $103/mês vs $2,380/mês
 - **Economia mensal:** $2,277 (95%)
@@ -139,25 +139,25 @@
 
 ---
 
-## Otimizações de Custo Recomendadas
+## Otimizações de Custo Recomendadas 🧑‍💻🔧
 
-### Curto Prazo (0-3 meses)
+### Curto Prazo (0-3 meses) ⏳
 1. **Reserved Instances:** Economia de 30-40% no EC2
 2. **S3 Intelligent Tiering:** Redução automática de custos de storage
 3. **CloudWatch Logs Retention:** Configurar retenção otimizada
 
-### Médio Prazo (3-12 meses)
+### Médio Prazo (3-12 meses) 📅
 1. **Savings Plans:** Economia de até 72% em compute
 2. **Spot Instances:** Para workloads não críticos
 3. **S3 Lifecycle Policies:** Migração automática para classes mais baratas
 
-### Estimativa com Otimizações
+### Estimativa com Otimizações 📉
 - **Economia adicional:** 30-50%
 - **Custo otimizado:** $50-70/mês
 
 ---
 
-## Projeção Anual
+## Projeção Anual 📆
 
 | Ano | Sem Otimização | Com Otimização | Economia |
 |-----|----------------|----------------|----------|
@@ -167,40 +167,40 @@
 
 ---
 
-## Benefícios Financeiros Adicionais
+## Benefícios Financeiros Adicionais 🏦
 
-### Redução de Custos Operacionais
+### Redução de Custos Operacionais 🧮
 - **Eliminação de CAPEX:** Sem investimento inicial em hardware
 - **Redução de OPEX:** Menor custo de manutenção e energia
 - **Eficiência de TI:** Equipe focada em desenvolvimento vs. infraestrutura
 
-### Flexibilidade Financeira
+### Flexibilidade Financeira 🔄
 - **Pay-as-you-use:** Pagamento apenas pelo consumo real
 - **Escalabilidade:** Crescimento sem grandes investimentos
 - **Previsibilidade:** Custos mensais controlados
 
 ---
 
-## Recomendações de Implementação
+## Recomendações de Implementação 🗺️
 
-### Fase 1 (Mês 1-2): Setup Básico
+### Fase 1 (Mês 1-2): Setup Básico 🏁
 - **Orçamento:** $103/mês
 - Implementação da arquitetura base
 - Monitoramento inicial de custos
 
-### Fase 2 (Mês 3-6): Otimização
+### Fase 2 (Mês 3-6): Otimização 🛠️
 - **Orçamento:** $70/mês
 - Implementação de Reserved Instances
 - Configuração de políticas de lifecycle
 
-### Fase 3 (Mês 6+): Expansão
+### Fase 3 (Mês 6+): Expansão 📈
 - **Orçamento:** Variável conforme crescimento
 - Scaling baseado em demanda real
 - Implementação de Savings Plans
 
 ---
 
-## Conclusão
+## Conclusão 🏆
 
 A migração para AWS representa uma **economia imediata de 95%** comparada à infraestrutura tradicional, com investimento mensal de apenas **$85-120** versus **$2,380** do modelo físico.
 
