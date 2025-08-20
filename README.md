@@ -37,3 +37,4 @@ Acesse o detalhamento de custos e cenários de uso em [Precificação AWS](propo
 
 ## Documentação complementar
 - [Precificação detalhada e projeções](proposta%20abstergo/precificacao-aws.md)
+- [Diagrama da arquitetura](proposta%20abstergo/Abstergo.png)
