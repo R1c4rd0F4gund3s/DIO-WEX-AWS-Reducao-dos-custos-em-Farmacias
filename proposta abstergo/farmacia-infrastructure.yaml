@@ -1,5 +1,5 @@
 AWSTemplateFormatVersion: '2010-09-09'
-Description: 'Infraestrutura AWS para Farmácia - Redução de Custos'
+Description: 'Infraestrutura AWS para Abstergo - Redução de Custos'
 
 Parameters:
   InstanceType:
